@@ -62,6 +62,14 @@ dependencies {
     implementation(libs.retrofit2.retrofit)
     implementation(libs.converter.gson)
 
+    implementation(libs.okhttp)
+    implementation(libs.okhttp.logging)
+
+    implementation(libs.datastore.preferences)
+    implementation(libs.datastore.core)
+
+    implementation(libs.accompanist.systemuicontroller)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

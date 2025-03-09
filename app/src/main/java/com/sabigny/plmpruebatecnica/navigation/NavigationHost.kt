@@ -6,7 +6,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
-import com.sabigny.plmpruebatecnica.auth.ui.LoginScreen
+import com.sabigny.plmpruebatecnica.auth.ui.RegistrationScreen
 import com.sabigny.plmpruebatecnica.core.ui.components.DrawerLayoutContainer
 import com.sabigny.plmpruebatecnica.developer.ui.DeveloperScreen
 import com.sabigny.plmpruebatecnica.search.ui.SearchScreen
@@ -25,8 +25,8 @@ fun NavigationHost(
         startDestination = startDestination.route
     ) {
         composable(NavigationRoute.Login.route) {
-            LoginScreen(
-                onLogin = {
+            RegistrationScreen(
+                onRegistrationComplete = {
                     navController.navigate(NavigationRoute.Search.route) {
                         popUpTo(NavigationRoute.Login.route) { inclusive = true }
                     }
