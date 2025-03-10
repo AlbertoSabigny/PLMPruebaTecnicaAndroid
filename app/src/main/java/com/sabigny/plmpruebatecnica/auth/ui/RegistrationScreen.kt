@@ -48,7 +48,7 @@ fun RegistrationScreen(
             modifier = Modifier
                 .fillMaxSize()
                 .padding(paddingValues)
-                .padding(horizontal = 16.dp),
+                .padding(horizontal = 12.dp),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             item {
@@ -64,15 +64,15 @@ fun RegistrationScreen(
                 Row(
                     modifier = Modifier
                         .fillMaxWidth()
-                        .padding(vertical = 8.dp),
+                        .padding(vertical = 4.dp),
                     verticalAlignment = Alignment.CenterVertically
                 ) {
                     Text(
                         text = "Email:",
-                        style = MaterialTheme.typography.bodyLarge,
+                        style = MaterialTheme.typography.bodyMedium,
                         fontWeight = FontWeight.Bold,
                         color = MaterialTheme.colorScheme.onBackground,
-                        modifier = Modifier.width(120.dp)
+                        modifier = Modifier.width(100.dp) 
                     )
                     CustomTextField(
                         value = state.email,
@@ -91,15 +91,15 @@ fun RegistrationScreen(
                 Row(
                     modifier = Modifier
                         .fillMaxWidth()
-                        .padding(vertical = 8.dp),
+                        .padding(vertical = 4.dp),
                     verticalAlignment = Alignment.CenterVertically
                 ) {
                     Text(
                         text = "Nombre:",
-                        style = MaterialTheme.typography.bodyLarge,
+                        style = MaterialTheme.typography.bodyMedium,
                         fontWeight = FontWeight.Bold,
                         color = MaterialTheme.colorScheme.onBackground,
-                        modifier = Modifier.width(120.dp)
+                        modifier = Modifier.width(100.dp)
                     )
                     CustomTextField(
                         value = state.firstName,
@@ -117,15 +117,15 @@ fun RegistrationScreen(
                 Row(
                     modifier = Modifier
                         .fillMaxWidth()
-                        .padding(vertical = 8.dp),
+                        .padding(vertical = 4.dp),
                     verticalAlignment = Alignment.CenterVertically
                 ) {
                     Text(
                         text = "A. Paterno:",
-                        style = MaterialTheme.typography.bodyLarge,
+                        style = MaterialTheme.typography.bodyMedium,
                         fontWeight = FontWeight.Bold,
                         color = MaterialTheme.colorScheme.onBackground,
-                        modifier = Modifier.width(120.dp)
+                        modifier = Modifier.width(100.dp)
                     )
                     CustomTextField(
                         value = state.lastName,
@@ -143,15 +143,15 @@ fun RegistrationScreen(
                 Row(
                     modifier = Modifier
                         .fillMaxWidth()
-                        .padding(vertical = 8.dp),
+                        .padding(vertical = 4.dp),
                     verticalAlignment = Alignment.CenterVertically
                 ) {
                     Text(
                         text = "A. Materno:",
-                        style = MaterialTheme.typography.bodyLarge,
+                        style = MaterialTheme.typography.bodyMedium,
                         fontWeight = FontWeight.Bold,
                         color = MaterialTheme.colorScheme.onBackground,
-                        modifier = Modifier.width(120.dp)
+                        modifier = Modifier.width(100.dp)
                     )
                     CustomTextField(
                         value = state.maternalLastName,
@@ -169,15 +169,15 @@ fun RegistrationScreen(
                 Row(
                     modifier = Modifier
                         .fillMaxWidth()
-                        .padding(vertical = 8.dp),
+                        .padding(vertical = 4.dp),
                     verticalAlignment = Alignment.CenterVertically
                 ) {
                     Text(
                         text = "Teléfono:",
-                        style = MaterialTheme.typography.bodyLarge,
+                        style = MaterialTheme.typography.bodyMedium,
                         fontWeight = FontWeight.Bold,
                         color = MaterialTheme.colorScheme.onBackground,
-                        modifier = Modifier.width(120.dp)
+                        modifier = Modifier.width(100.dp)
                     )
                     CustomTextField(
                         value = state.phone,
@@ -191,7 +191,6 @@ fun RegistrationScreen(
                                 professionalLicenseFocus.requestFocus()
                             } else {
                                 viewModel.onEvent(RegistrationEvent.SubmitRegistration)
-
                             }
                         },
                         modifier = Modifier.weight(1f)
@@ -203,15 +202,15 @@ fun RegistrationScreen(
                 Row(
                     modifier = Modifier
                         .fillMaxWidth()
-                        .padding(vertical = 8.dp),
+                        .padding(vertical = 4.dp),
                     verticalAlignment = Alignment.CenterVertically
                 ) {
                     Text(
                         text = "Profesión:",
-                        style = MaterialTheme.typography.bodyLarge,
+                        style = MaterialTheme.typography.bodyMedium,
                         fontWeight = FontWeight.Bold,
                         color = MaterialTheme.colorScheme.onBackground,
-                        modifier = Modifier.width(120.dp)
+                        modifier = Modifier.width(100.dp)
                     )
                     CustomDropdown(
                         options = state.professions,
@@ -235,15 +234,15 @@ fun RegistrationScreen(
                     Row(
                         modifier = Modifier
                             .fillMaxWidth()
-                            .padding(vertical = 8.dp),
+                            .padding(vertical = 4.dp),
                         verticalAlignment = Alignment.CenterVertically
                     ) {
                         Text(
                             text = "Cédula:",
-                            style = MaterialTheme.typography.bodyLarge,
+                            style = MaterialTheme.typography.bodyMedium,
                             fontWeight = FontWeight.Bold,
                             color = MaterialTheme.colorScheme.onBackground,
-                            modifier = Modifier.width(120.dp)
+                            modifier = Modifier.width(100.dp)
                         )
                         CustomTextField(
                             value = state.professionalLicense,
@@ -262,15 +261,15 @@ fun RegistrationScreen(
                 Row(
                     modifier = Modifier
                         .fillMaxWidth()
-                        .padding(vertical = 8.dp),
+                        .padding(vertical = 4.dp),
                     verticalAlignment = Alignment.CenterVertically
                 ) {
                     Text(
                         text = "País:",
-                        style = MaterialTheme.typography.bodyLarge,
+                        style = MaterialTheme.typography.bodyMedium,
                         fontWeight = FontWeight.Bold,
                         color = MaterialTheme.colorScheme.onBackground,
-                        modifier = Modifier.width(120.dp)
+                        modifier = Modifier.width(100.dp)
                     )
                     CustomDropdown(
                         options = state.countries,
@@ -289,15 +288,15 @@ fun RegistrationScreen(
                 Row(
                     modifier = Modifier
                         .fillMaxWidth()
-                        .padding(vertical = 8.dp),
+                        .padding(vertical = 4.dp),
                     verticalAlignment = Alignment.CenterVertically
                 ) {
                     Text(
                         text = "Estado:",
-                        style = MaterialTheme.typography.bodyLarge,
+                        style = MaterialTheme.typography.bodyMedium,
                         fontWeight = FontWeight.Bold,
                         color = MaterialTheme.colorScheme.onBackground,
-                        modifier = Modifier.width(120.dp)
+                        modifier = Modifier.width(100.dp)
                     )
                     CustomDropdown(
                         options = state.states,
@@ -313,7 +312,7 @@ fun RegistrationScreen(
             }
 
             item {
-                Spacer(modifier = Modifier.height(16.dp))
+                Spacer(modifier = Modifier.height(8.dp))
             }
 
             item {
@@ -322,8 +321,8 @@ fun RegistrationScreen(
                     onClick = { viewModel.onEvent(RegistrationEvent.SubmitRegistration) },
                     enabled = !state.isSubmitting,
                     modifier = Modifier
-                        .fillMaxWidth()
-                        .padding(vertical = 16.dp)
+                        .fillMaxWidth(0.7f)
+                        .padding(vertical = 12.dp)
                 )
             }
 
@@ -332,8 +331,8 @@ fun RegistrationScreen(
                     Text(
                         text = state.error,
                         color = Color.Red,
-                        style = MaterialTheme.typography.bodyMedium,
-                        modifier = Modifier.padding(vertical = 8.dp)
+                        style = MaterialTheme.typography.bodySmall,
+                        modifier = Modifier.padding(vertical = 4.dp)
                     )
                 }
             }
